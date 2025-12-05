@@ -1,0 +1,11 @@
+services:
+  nuxt-own-mcp:
+    container_name: nuxt-own-mcp
+    build:
+      context: .
+      target: runner
+    ports:
+      - "3005:3000"
+networks:
+  nuxt-own-mcp-network:
+  
